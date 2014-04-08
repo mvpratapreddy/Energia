@@ -1254,6 +1254,14 @@ public class Editor extends JFrame implements RunnerListener {
       });
     menu.add(item);
 
+    item = new JMenuItem(_("Install C55 Tools"));
+    item.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+          ToolsInstall.runDialog();
+        }
+      });
+    menu.add(item);
+
     item = new JMenuItem(_("Download Compiler Tools for DSP Shield"));
     item.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e) {
